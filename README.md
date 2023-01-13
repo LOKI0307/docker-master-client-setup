@@ -1,5 +1,5 @@
-"# docker-master-client-setup" 
-Agenda:- Here we will try to setup master client architecture for docker.
+# "docker-master-client-setup" 
+# Agenda:- Here we will try to setup master client architecture for docker.
 
 Pre-requisite:- 
 > We should have 2 ubuntu 20.4 server with network connevctivity
