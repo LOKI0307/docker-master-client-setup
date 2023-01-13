@@ -49,9 +49,12 @@ ps aux | grep dockerd
 Step 6) Login into the client service need to perform same steps for installing docker on it.
 ````
 apt-get update -y
-apt-get install git apt-transport-https ca-certificates curl software-properties-common -y
-add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 apt-get install docker-ce docker-compose -y
+apt-cache policy docker-ce
+sudo systemctl status docker
 docker --version
 ````
 Step 7) Now we need to add DOCKER_HOST variable to define the Docker daemon address on client server.
