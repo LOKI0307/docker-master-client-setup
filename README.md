@@ -19,7 +19,7 @@ docker-client-ip docker-client
 Step 2) Same step need to perform on client server.
 ````
 sudo su -
-hostnamectl set-hostname docker-server
+hostnamectl set-hostname docker-client
 vi /etc/hosts
 docker-server-ip docker-server
 docker-client-ip docker-client
